@@ -6,7 +6,7 @@ export EXPO_PASSWORD=XXXX # Find password in our Trello board card
 echo "Expo project name is ${PROJECT_NAME}"
 
 # Copy generated app source code to this directory (node_modules are already installed here)
-cp /usr/src/app/* .
+cp -r /usr/src/app/* .
 ls
 
 expo --version
