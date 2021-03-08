@@ -3,9 +3,6 @@ FROM node:14
 # Pre-install Expo client
 RUN npm install -g expo-cli
 
-# This is where the converted/output code will reside
-VOLUME /usr/src/app
-
 # In this package building and publishing happens
 WORKDIR /usr/src/workdir
 

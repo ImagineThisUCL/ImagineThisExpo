@@ -5,7 +5,8 @@ echo "Expo project ID is ${PROJECT_ID}"
 node update-status.js RUNNING
 
 # Copy generated app source code to this directory (node_modules are already installed here)
-cp -r /usr/src/app/* .
+# Note: /usr/src/app is volume shared with backend container which generates code there
+cp -r /usr/src/app/$PROJECT_ID/* .
 ls
 
 expo --version
